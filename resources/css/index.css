@@ -1,0 +1,184 @@
+.container-1{
+    background-image: url("https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?size=626&ext=jpg");
+    background-size: cover;
+}
+.container-1 h1{
+    color: white;
+    font-family: Verdana;
+    
+}
+.card-title{
+    border: 2px;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.card-text{
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.heading-1{
+    padding: 8px;
+    text-align: center;
+    border: 1px solid;
+    background-color: #D6E3EF;
+}
+ .hismis .row{
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 10px;
+    
+ }
+ .hismis .row:hover{
+   background-color: #EDBB53;
+    
+ }
+ .container-2{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid goldenrod;
+    font-family:  Helvetica, sans-serif ; 
+ }
+ .container-2 p{
+    font-size: 30px;
+ }
+ .container-2 h2{
+   font-size: 34px;
+ }
+ .container-3{
+    border: 2px solid gray;
+    padding: 5px;
+
+ }
+
+ .container-3 h2,h5{
+    padding: 5px;
+    color:black;
+    font-size: 28px;
+
+ }
+ .container-4{
+    background-color: #0d2436;
+    border: 2px solid gold;
+    padding: 5px;
+    color: rebeccapurple;
+    
+ }
+ .container:hover{
+    color: yellowgreen;
+ }
+
+.body{
+    background-color: #f5fcff;
+}
+.card:hover{
+   background-color: #51EEA1;
+}
+.container-5{
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   flex-flow: wrap;
+   height: 480px;
+   border: 1px solid #8ed082;
+   justify-content: center;
+   padding: 20px;
+
+}
+.login-form{
+   border: 10px solid;
+}
+.login-form h2{
+   padding: 5px;
+}
+.frm{
+   padding: 35px;
+}
+.form-group{
+   padding:15px
+}
+.frm-1{
+   padding: 10px
+}
+
+
+.my-5{
+   text-align: center;
+   color: greenyellow;
+   font-size: 30px;
+   border:2px solid lightgray;
+}
+#newCourseForm{
+   color:#EDBB53;
+   background-color: antiquewhite;
+   border: 1px solid;
+   padding: 45px;
+   margin:0 350px 350px 350px;
+}
+body{
+   background-color: rgb(234, 236, 122);
+}
+#list-items{
+   display: flex;
+   padding: 15px;
+}
+#card1{
+   border: 3px solid;
+   padding: 15px;
+}
+.container1{
+   background-color: hsl(32, 94%, 52%);
+}
+#sai2{
+   color: black;
+   font-size: 30px;
+}
+
+.tooltip {
+   position: relative;
+   display: inline-block;
+   border-bottom: 1px solid black; /* If you want dots under the hoverable text */
+ }
+ 
+ /* Tooltip text */
+ .tooltip .tooltiptext {
+   visibility: hidden;
+   width: 120px;
+   background-color: #555;
+   color: #fff;
+   text-align: center;
+   padding: 5px 0;
+   border-radius: 6px;
+ 
+   /* Position the tooltip text */
+   position: absolute;
+   z-index: 1;
+   bottom: 125%;
+   left: 50%;
+   margin-left: -60px;
+ 
+   /* Fade in tooltip */
+   opacity: 0;
+   transition: opacity 0.3s;
+ }
+ 
+ /* Tooltip arrow */
+ .tooltip .tooltiptext::after {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: #555 transparent transparent transparent;
+ }
+ 
+ /* Show the tooltip text when you mouse over the tooltip container */
+ .tooltip:hover .tooltiptext {
+   visibility: visible;
+   opacity: 1;
+ }
