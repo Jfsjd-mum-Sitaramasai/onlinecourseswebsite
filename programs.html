@@ -11,6 +11,11 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
       <link rel="stylesheet" href="./resources/css/index.css">
+      <style type="text/css">
+      td {
+       padding: 0 15px;
+       }
+      </style>
 
     <title>Courses List</title>
 </head>
@@ -49,12 +54,24 @@
 </nav> 
 
     <div class="container1">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" 
+             role="status" id="loading">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
         <h1 class="my-5">Courses List</h1>
+        <div class="parent">
+        <button class="child" id="get">get Course list</button>
+        <button class="child" id="delete">Delete Course</button>
+        </div>
         <div id="list-items"></div>
+        <table id="courselist"></table>
+        
         
     </div>
 
-    div class="container-4">
+    <div class="container-4">
   <div class="footer-menu-column-1 d-flex justify-content-center">
       <ul role="list" class="link-menu-2 links w-list-unstyled">
           <li class="link-menu-item-2">Home<br>
@@ -79,7 +96,7 @@
 
     
 
-       
+  <script src="js\courselist.js"type="text/javascript"></script>   
     <script src="js\course-form.js"type="text/javascript"></script>
       
     <script src="js\coursescontroller.js"type="text/javascript"></script>

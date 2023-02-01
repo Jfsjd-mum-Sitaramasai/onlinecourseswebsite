@@ -1,37 +1,48 @@
 const buttonCalled=document.getElementById("bt-1");
 buttonCalled.addEventListener('click',submit_info)
-function resolveAfter15Seconds(){
-  return new Promise(resolve=>{
-    setTimeout(() =>{
-      resolve('resolved');
-  },15000);
-});
-}
 
-async function submit_info(){
+
+
+function submit_info(){
     let name1=document.getElementById("newCourseName").value
     let description1=document.getElementById("newCourseDescription").value
     let imgurl1=document.getElementById("newCourseImageUrl").value
+    let price1=document.getElementById("newCoursePrice").value
+    var coursesfromhtml={name:name1, description:description1, imageurl:imgurl1, price:price1}
     
-    var coursesFromHtml= {name:name1, description:description1, imgurl:imgurl1, }
+
+    let request = new Request('http://localhost:8080/createcourse',{
+        headers: new Headers({
+            
+            'Content-type': 'application/json'
+        }),
+        method: 'POST',
+        body: JSON.stringify({
+            "name": name1, 
+            "description": description1, 
+            "imageurl": imgurl1, 
+            "price": price1
+        })
+})
+fetch(request).then((response)=>{
+    console.log(response);
+    response.json().then((data)=>{
+        console.log(data);
+    })
+})
+    
+    
+    
 var newobject=new programsController(0);
 /*console.log(itemsfromhtml);
 console.log(newobject);*/
 //console.log(newobject.items);
-newobject.addItem(coursesFromHtml);
-let result=await resolveAfter15Seconds();
-result=newobject.display();
+newobject.addItem(coursesfromhtml);
 
-
-}
-
-
-async function for_handel(){
-
+newobject.display();
 const source = document.getElementById('info').innerHTML;
 
 const template = Handlebars.compile(source)
-let name1=document.getElementById("newCourseName").value
 
 const context = {};
   context.coursename=name1;
@@ -41,10 +52,19 @@ const context = {};
 
     const compiledHtml = template(context)
   
-    let result1=await resolveAfter15Seconds();
-     result1 =   document.getElementById('para')
+   
+     let result1 =   document.getElementById('para')
     
     result1.innerHTML = compiledHtml
+
+
+}
+
+
+
+
+
+
 
 
     
@@ -54,7 +74,7 @@ const context = {};
  
 
 
-}
+
 
     
    

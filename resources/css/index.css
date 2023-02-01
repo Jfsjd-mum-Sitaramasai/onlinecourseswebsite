@@ -107,12 +107,12 @@
 
 .my-5{
    text-align: center;
-   color: greenyellow;
+   color: #FE0823;
    font-size: 30px;
    border:2px solid lightgray;
 }
 #newCourseForm{
-   color:#EDBB53;
+   color: #389AFC;
    background-color: antiquewhite;
    border: 1px solid;
    padding: 45px;
@@ -181,4 +181,22 @@ body{
  .tooltip:hover .tooltiptext {
    visibility: visible;
    opacity: 1;
+ }
+
+ .parent{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-left : 20px;
+   margin-right: 20px;
+ }
+ 
+ .child{
+   width: 25%;
+   box-sizing: border-box;
+   padding: 10px;
+   background-color: #0a95ff;
+   font-size: medium;
+   font-family: sans-serif;
+   color: lightyellow;
  }

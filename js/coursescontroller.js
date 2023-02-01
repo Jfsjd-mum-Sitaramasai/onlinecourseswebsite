@@ -18,10 +18,18 @@ class programsController{
         console.log("after adding current id"+ this.courses);
         var x= JSON.stringify(this.courses);
         localStorage.setItem("courses", JSON.stringify(this.courses));
+
+        
+
+        
        
       
 
     }
+    
+
+        
+
     display(){
         for(var i = 0, size = this.courses.length; i < size ; i++){
             const course= this.courses[i];
